@@ -151,6 +151,8 @@ div.content {
 	/* border: 3px solid green; */
 	padding: 10px;
 }
+
+/* free subcription card */
 .free h1 {
 	background: rgb(90, 31, 113);
 	background: linear-gradient(
@@ -169,16 +171,121 @@ div.content {
 	color: #611275;
 }
 .free table {
-  border-collapse: collapse;
-  width: 75%;
+	border-collapse: collapse;
+	width: 100%;
 }
 
-.free th, td {
-  text-align: center;
-  padding: 8px;
+.free th,
+td {
+	text-align: center;
+	padding: 8px;
 }
 
-.free tr:nth-child(odd) {background: #eadded;}
-.free button{
-  background-color: #611275;
+.free tr:nth-child(odd) {
+	background: #eadded;
+}
+.free button {
+	background-color: #611275;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0 auto;
+	display: block;
+}
+/* ---------------------------------------- */
+/* stndard subcription card */
+.standard h1 {
+	background: rgb(31, 33, 113);
+	background: linear-gradient(
+		90deg,
+		rgba(31, 33, 113, 1) 0%,
+		rgba(9, 11, 121, 1) 53%,
+		rgba(62, 62, 174, 1) 94%
+	);
+	text-align: center;
+	padding: 10px 75px 10px 75px;
+	color: #f1f1f1;
+}
+.standard h3 {
+	text-align: center;
+	padding: 10px 100px 10px 100px;
+	color: rgb(31, 33, 113);
+}
+.standard table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.standard th,
+td {
+	text-align: center;
+	padding: 8px;
+}
+
+.standard tr:nth-child(odd) {
+	background: #eadded;
+}
+.standard button {
+	background-color: rgb(31, 33, 113);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0 auto;
+	display: block;
+}
+/* ---------------------------------------------- */
+/* primium subscription card */
+.primium h1 {
+	background: rgb(31, 113, 58);
+	background: linear-gradient(
+		90deg,
+		rgba(31, 113, 58, 1) 0%,
+		rgba(9, 121, 24, 1) 53%,
+		rgba(62, 174, 95, 1) 94%
+	);
+	text-align: center;
+	padding: 10px 75px 10px 75px;
+	color: #f1f1f1;
+}
+.primium h3 {
+	text-align: center;
+	padding: 10px 100px 10px 100px;
+	color: rgb(31, 113, 58);
+}
+.primium table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.primium th,
+td {
+	text-align: center;
+	padding: 8px;
+}
+
+.primium tr:nth-child(odd) {
+	background: #eadded;
+}
+.primium button {
+	background-color: rgb(31, 113, 58);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0 auto;
+	display: block;
 }
