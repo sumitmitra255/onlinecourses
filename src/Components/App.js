@@ -2,8 +2,7 @@ import { Navigation } from './Navigation'
 import { InstructorProfile } from './InstructorProfile'
 import { TabNavigation } from './TabNavigation'
 import { PlanSubcription } from './PlanSubcription'
-import { Register } from './Register'
-
+import { Query } from './Query'
 
 function App() {
 	return (
@@ -21,8 +20,10 @@ function App() {
 			<br />
 			<br />
 			<div>
-				<Register/>
+				<Query />
 			</div>
+			<br />
+			<br />
 		</>
 	)
 }

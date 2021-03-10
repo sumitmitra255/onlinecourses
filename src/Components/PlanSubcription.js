@@ -1,17 +1,20 @@
 export const PlanSubcription = (props) => {
 	return (
-		<div>
-			<div style={{ display: 'flex', justifyContent: 'space-around' }}>
+		<div style={{ display: 'flex', justifyContent: 'center' }}>
+			<br />
+			<div className='subscription'>
 				<div className='free'>
 					<h1>Free</h1>
 					<h3>₹1000</h3>
 					<table>
-						<tr>
-							<td>ample text here</td>
-						</tr>
-						<tr>
-							<td>ample text here</td>
-						</tr>
+						<tbody>
+							<tr>
+								<td>ample text here</td>
+							</tr>
+							<tr>
+								<td>ample text here</td>
+							</tr>
+						</tbody>
 					</table>
 					<button>Select</button>
 				</div>
@@ -20,12 +23,14 @@ export const PlanSubcription = (props) => {
 					<h1>Standard</h1>
 					<h3>₹1500</h3>
 					<table>
-						<tr>
-							<td>ample text here</td>
-						</tr>
-						<tr>
-							<td>ample text here</td>
-						</tr>
+						<tbody>
+							<tr>
+								<td>ample text here</td>
+							</tr>
+							<tr>
+								<td>ample text here</td>
+							</tr>
+						</tbody>
 					</table>
 
 					<button>Select</button>
@@ -34,16 +39,18 @@ export const PlanSubcription = (props) => {
 					<h1>Primium</h1>
 					<h3>₹2000</h3>
 					<table>
-						<tr>
-							<td>ample text here</td>
-						</tr>
-						<tr>
-							<td>ample text here</td>
-						</tr>
+						<tbody>
+							<tr>
+								<td>ample text here</td>
+							</tr>
+							<tr>
+								<td>ample text here</td>
+							</tr>
+						</tbody>
 					</table>
 					<button>Select</button>
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}

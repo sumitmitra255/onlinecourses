@@ -4,10 +4,13 @@ body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
+.topnav img {
+	padding: 0px 100px 0px 50px;
+}
 .topnav {
 	overflow: hidden;
 	background-color: #0d87d9;
+	padding: 10px 10px 10px 10px;
 }
 
 .topnav a {
@@ -15,9 +18,9 @@ body {
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 15px 15px 15px 15px;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 20px;
 }
 
 .topnav a:hover {
@@ -28,7 +31,20 @@ body {
 .topnav .icon {
 	display: none;
 }
+.topnav input[type='text'] {
+	border-radius: 15px;
+	width: 150px;
+	height: 40px;
+	font-size: 16px;
+	outline: none;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
 
+.topnav input[type='text']:focus {
+	width: 50%;
+	outline: none;
+}
 @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {
 		display: none;
@@ -37,6 +53,20 @@ body {
 		float: right;
 		display: block;
 	}
+	.topnav input[type='text'] {
+	border-radius: 15px;
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	outline: none;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+.topnav input[type='text']:focus {
+	width: 250%;
+	outline: none;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -59,8 +89,8 @@ body {
 .sidebar {
 	margin: 0;
 	padding: 0;
-	width: 300px;
-	background-color: #f1f1f1;
+	width: 400px;
+	background-color: white;
 	position: absolute;
 	overflow: auto;
 }
@@ -74,30 +104,15 @@ body {
 .sidebar td {
 	border-bottom: 1px solid #a3abb8;
 	padding: 15px;
-	/* text-align: center; */
+	text-align: left;
 	vertical-align: middle;
-}
-.sidebar a {
-	display: block;
-	color: black;
-	padding: 16px;
-	text-decoration: none;
-}
-
-.sidebar a.active {
-	background-color: #4caf50;
-	color: white;
-}
-
-.sidebar a:hover:not(.active) {
-	background-color: #555;
-	color: white;
 }
 
 div.content {
-	margin-left: 300px;
+	margin-left: 400px;
 	padding: 1px 16px;
-	height: 100%;
+	height: 700px;
+	overflow: scroll;
 }
 
 @media screen and (max-width: 700px) {
@@ -106,23 +121,17 @@ div.content {
 		height: auto;
 		position: relative;
 	}
-	.sidebar a {
-		float: left;
-	}
+
 	div.content {
 		margin-left: 0;
 	}
 }
 
 @media screen and (max-width: 400px) {
-	.sidebar a {
-		text-align: center;
-		float: none;
-	}
 }
 /* ---------------------------------------------------- */
 /* image responsive */
-.responsive {
+.responsive2 {
 	width: 100%;
 	max-width: 200px;
 	height: auto;
@@ -131,9 +140,9 @@ div.content {
 }
 .responsiveimage {
 	width: 100%;
-	max-width: 400px;
+	max-width: 250px;
 	height: auto;
-	max-height: 400px;
+	max-height: 250px;
 	padding: 10px;
 }
 /* ------------------------------------------------------ */
@@ -151,7 +160,23 @@ div.content {
 	/* border: 3px solid green; */
 	padding: 10px;
 }
-
+/* ------------------------- */
+/* subcription div */
+.subscription {
+	display: flex;
+	justify-content: space-around;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	width: 90%;
+}
+@media (max-width: 800px) {
+	.subscription {
+		flex-direction: column;
+		/* width: 50%; */
+		height: 50%;
+	}
+}
 /* free subcription card */
 .free h1 {
 	background: rgb(90, 31, 113);
@@ -288,4 +313,113 @@ td {
 	font-size: 16px;
 	margin: 0 auto;
 	display: block;
+}
+/* --------------------------------------------------- */
+/* DIV animate */
+.basicdiv {
+	background-color: #fff;
+	margin: auto;
+	width: 60%;
+	/* border: 3px solid #6c5ce7; */
+	padding: 10px;
+	box-shadow: 10px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+	transition: all 0.4s ease;
+	/* border-style: solid; */
+	/* border-width: 1px; */
+}
+.basicdiv:hover {
+	border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+	box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 800px) {
+	.basicdiv {
+		width: 90%;
+	}
+}
+.basicdiv h1 {
+	text-align: center;
+}
+.basicdiv table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.basicdiv td {
+	text-align: center;
+	padding: 8px;
+}
+.buttondiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* ----------------------------------- */
+.instructordiv {
+	/* background-color: #fff; */
+	margin: auto;
+	width: 90%;
+	padding: 10px;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+	transition: all 0.4s ease;
+}
+.instructordiv:hover {
+	border-radius: 2% 2% 2% 2% / 2% 2% 2% 2%;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.contactdiv {
+	margin: auto;
+	width: 90%;
+	padding: 10px;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+	transition: all 0.4s ease;
+}
+.contactdiv:hover {
+	border-radius: 2% 2% 2% 2% / 2% 2% 2% 2%;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+/* --------------------------------------------------------- */
+/* danger button */
+.btn {
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	padding: 5px 10px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.danger {
+	border-color: #f44336;
+	color: red;
+}
+
+.danger:hover {
+	background: #f44336;
+	color: white;
+}
+.fixbtn {
+	background-color: #f44336;
+	border: none;
+	/* border-radius: 5px; */
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 auto;
+	display: block;
+}
+.carddiv {
+	background-color: #fff;
+	margin: auto;
+	width: 90%;
+	padding: 10px;
+	box-shadow: 10px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+	transition: all 0.4s ease;
+}
+.carddiv:hover {
+	border-radius: 2% 2% 2% 2% / 2% 2% 2% 2%;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
