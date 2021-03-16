@@ -1,4 +1,4 @@
-import baby from '../Resources/baby.jfif'
+import baby from '../Resources/instructor.png'
 import {
 	Accordion,
 	AccordionDetails,
@@ -11,8 +11,7 @@ export const InstructorProfile = (props) => {
 		<>
 			<div className='sidebar'>
 				<br />
-				<div className='instructordiv'>
-					<h4>Instructor Profile</h4>
+				<div className='instructorcard '>
 					<div
 						style={{
 							display: 'flex',
@@ -26,7 +25,7 @@ export const InstructorProfile = (props) => {
 							width='600'
 							height='400'></img>
 					</div>
-					<h4>Welcome User</h4>
+					<h4 className='welcomeuser'>Welcome John Doe</h4>
 					<div style={{ display: ' flex', justifyContent: 'center' }}>
 						<table>
 							<tbody>
@@ -58,11 +57,10 @@ export const InstructorProfile = (props) => {
 				<br />
 				<div className='contactdiv'>
 					<Accordion>
-						<AccordionSummary
-							expandIcon={<ExpandMoreIcon />}
-							aria-controls='panel1a-content'
-							id='panel1a-header'>
-							Contact Details
+						<AccordionSummary expandIcon={<ExpandMoreIcon />}>
+							<div className='contactdetails'>
+								<b>Contact Details</b>
+							</div>
 						</AccordionSummary>
 						<AccordionDetails>
 							Mitrasumit1@gmail.com

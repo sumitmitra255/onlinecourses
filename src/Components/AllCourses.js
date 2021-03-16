@@ -1,4 +1,3 @@
-
 import Tab from '@material-ui/core/Tab'
 import TabContext from '@material-ui/lab/TabContext'
 import TabList from '@material-ui/lab/TabList'
@@ -15,36 +14,36 @@ export const AllCourses = (props) => {
 	}
 	return (
 		<>
-				<TabContext value={value}>
-						<TabList
-							classes={{
-								flexContainer: tabsstyle.flexContainer,
-							}}
-							onChange={handleChange}
-							variant='scrollable'>
-							<Tab
-								classes={{
-									root: tabstyle.root,
-								}}
-								label='Offline Courses'
-								value='1'
-							/>
-							<Tab
-								classes={{
-									root: tabstyle.root, 
-								}}
-								label='Live Courses'
-								value='2'
-							/>
-						</TabList>
-					<TabPanel value='1'>
-						<CourseCard coursetype='offline' />
-					</TabPanel>
-					<TabPanel value='2'>
-						<CourseCard coursetype='live' />
-					</TabPanel>
-				</TabContext>
-			</>
-	
+			<TabContext value={value}>
+				<TabList
+					classes={{
+						flexContainer: tabsstyle.flexContainer,
+					}}
+					onChange={handleChange}
+					indicatorColor=''
+					variant='fullWidth'>
+					<Tab
+						classes={{
+							root: tabstyle.root,
+						}}
+						label='Offline Courses'
+						value='1'
+					/>
+					<Tab
+						classes={{
+							root: tabstyle.root,
+						}}
+						label='Live Courses'
+						value='2'
+					/>
+				</TabList>
+				<TabPanel value='1'>
+					<CourseCard coursetype='offline' />
+				</TabPanel>
+				<TabPanel value='2'>
+					<CourseCard coursetype='live' />
+				</TabPanel>
+			</TabContext>
+		</>
 	)
 }

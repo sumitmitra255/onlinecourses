@@ -13,7 +13,6 @@ export const CourseCard = (props) => {
 							<button className='btn danger'>+ Add New Course</button>
 						</div>
 					</div>
-					<hr />
 				</>
 			) : (
 				<>
@@ -23,32 +22,30 @@ export const CourseCard = (props) => {
 							<button className='btn danger'>+ Schedule Live Classes</button>
 						</div>
 					</div>
-					<hr />
 				</>
 			)}
 
 			{coursetype === 'offline'
-				? temp.map((ele,i) => {
+				? temp.map((ele, i) => {
 						return (
 							<div key={i}>
+								<br />
 								<div className='carddiv'>
-									<div className='flexdiv'>
+									<div className='flexdiv2'>
 										<div>
 											<img
 												src={digitalmarket}
 												alt='Nature'
 												className='responsiveimage'></img>
 										</div>
-										<div>
-											<h3>Why digital marketing?</h3>
-											<hr />
-											Instructore name : Sumit Mitra
-											<br />
-											Course Language : English
-											<br />
-											Chapter 02
-											<br />
-											Crux of social media
+										<div className='cardcontent'>
+											<p>
+												<h3>Why digital marketing?</h3>
+												Instructore name : Sumit Mitra
+											</p>
+											<p>Course Language : English </p>
+											<p>Chapter 02 </p>
+											<p>Crux of social media</p>
 										</div>
 										<div className='center'>
 											<button className='btn danger'>Edit Course</button>
@@ -62,9 +59,10 @@ export const CourseCard = (props) => {
 							</div>
 						)
 				  })
-				: temp.map((ele,i) => {
+				: temp.map((ele, i) => {
 						return (
 							<div key={i}>
+								<br />
 								<div className='carddiv'>
 									<div className='flexdiv'>
 										<div>

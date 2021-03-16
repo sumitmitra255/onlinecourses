@@ -1,7 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles'
 export const tabStyles = makeStyles({
 	root: {
-		border: ' 1px solid red',
 		background: 'white',
 		borderRadius: '5px',
 		color: 'red',
@@ -10,12 +9,11 @@ export const tabStyles = makeStyles({
 			background: 'red',
 			color: 'white',
 		},
-		
 	},
 })
 export const tabsStyles = makeStyles({
 	flexContainer: {
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 	},
 })
 export const tabsnavigationStyles = makeStyles({
@@ -28,13 +26,14 @@ export const tabsnavigationStyles = makeStyles({
 })
 export const tabnavigationStyles = makeStyles({
 	root: {
-		width: '246px',
-		height: '25px',
-		textAlign: 'center',
-		font: ' normal normal normal 22px/25px Roboto',
-		letterSpacing: ' 0px',
-		color: '#143754',
-		// opacity: '1',
-		opacity: '0.35',
+		background: 'white',
+		borderRadius: '5px',
+		color: '#002984',
+		// padding: '0 30px',
+		fontSize: '14px',
+		'&:focus': {
+			background: '#002984',
+			color: 'white',
+		},
 	},
 })

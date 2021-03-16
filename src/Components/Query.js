@@ -17,7 +17,11 @@ export const Query = (props) => {
 			if (selectedcountry.length) {
 				values.country = selectedcountry
 
-				swal('Success', `Dear ${values.fullname} ! Your Query is Sent!`, 'success')
+				swal(
+					'Success',
+					`Dear ${values.fullname} ! Your Query is Sent!`,
+					'success'
+				)
 			}
 		},
 	})
@@ -46,8 +50,9 @@ export const Query = (props) => {
 	}
 	return (
 		<div className='basicdiv'>
-			<h1>Any Queries?</h1>
-			<hr />
+			<h1 style={{ letterSpacing: '0px', color: '#143754' }}>Any Queries?</h1>
+			<br />
+			<br />
 			<div>
 				<form onSubmit={formik.handleSubmit}>
 					<br />
