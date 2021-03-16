@@ -47,11 +47,14 @@ export const CourseCard = (props) => {
 											<p>Chapter 02 </p>
 											<p>Crux of social media</p>
 										</div>
-										<div className='center'>
-											<button className='btn danger'>Edit Course</button>
-											<br />
-											<br />
-											<button className='fixbtn'>View Details</button>
+										<div className='cardbuttondiv'>
+											<div>
+												<button className='btn danger'>Edit Course</button>
+											</div>
+
+											<div>
+												<button className='fixbtn'>View Details</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -81,11 +84,14 @@ export const CourseCard = (props) => {
 											<br />
 											Crux of social media
 										</div>
-										<div className='center'>
-											<button className='btn danger'>Manage Course</button>
-											<br />
-											<br />
-											<button className='fixbtn'> Send Link </button>
+										<div className='cardbuttondiv'>
+											<div>
+												<button className='btn danger'>Edit Course</button>
+											</div>
+
+											<div>
+												<button className='fixbtn'>View Details</button>
+											</div>
 										</div>
 									</div>
 								</div>

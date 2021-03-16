@@ -424,10 +424,6 @@ td {
 	color: red;
 }
 
-.danger:hover {
-	background: #f44336;
-	color: white;
-}
 .fixbtn {
 	background-color: #f44336;
 	border: none;
@@ -527,4 +523,10 @@ td {
 	background: #ffffff 0% 0% no-repeat padding-box;
 	border-radius: 10px;
 	opacity: 1;
+}
+.cardbuttondiv {
+	display: flex;
+	margin: auto;
+	padding: 20px;
+	
 }
