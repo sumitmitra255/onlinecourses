@@ -12,13 +12,14 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { editValidationSchema } from '../Schema/registerValidationSchema.js'
 import { useFormik } from 'formik'
+import swal from 'sweetalert'
 export const InstructorProfile = (props) => {
 	const { token } = props
 	const [userinfo, setuserinfo] = useState()
 	const [editToggle, seteditToggle] = useState(false)
 	useEffect(() => {
 		axios
-			.get('http://localhost:3050/api/users/account', {
+			.get('https://coursesbackend.herokuapp.com/api/users/account', {
 				headers: { Authorization: `Bearer ${token}` },
 			})
 			.then((response) => {
@@ -43,12 +44,19 @@ export const InstructorProfile = (props) => {
 				email: values.email,
 				address: values.address,
 			}
+
 			axios
-				.put(`http://localhost:3050/api/users/${userinfo._id}`, values, {
-					headers: { Authorization: `Bearer ${token}` },
-				})
+				.put(
+					`https://coursesbackend.herokuapp.com/api/users/${userinfo._id}`,
+					values,
+					{
+						headers: { Authorization: `Bearer ${token}` },
+					}
+				)
 				.then((response) => {
+					setuserinfo({ email: values.email, address: values.address })
 					seteditToggle(false)
+					swal('Success', `Dear User ! Your info is updated!`, 'success')
 				})
 				.catch((err) => {
 					alert(err.message)
@@ -151,9 +159,9 @@ export const InstructorProfile = (props) => {
 								</>
 							) : (
 								<>
-									{userinfo?.email}
+									Email : {userinfo?.email}
 									<br />
-									{userinfo?.address}
+									Address :{userinfo?.address}
 									<br />
 								</>
 							)}

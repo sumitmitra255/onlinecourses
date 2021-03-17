@@ -19,7 +19,10 @@ export const Register = (props) => {
 			console.log(values)
 			if (values) {
 				axios
-					.post('http://localhost:3050/api/users/register', values)
+					.post(
+						'https://coursesbackend.herokuapp.com/api/users/register',
+						values
+					)
 					.then((response) => {
 						if (response.data._id) {
 							console.log(response.data)

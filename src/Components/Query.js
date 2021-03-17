@@ -17,11 +17,7 @@ export const Query = (props) => {
 			if (selectedcountry.length) {
 				values.country = selectedcountry
 
-				swal(
-					'Success',
-					`Dear ${values.fullname} ! Your Query is Sent!`,
-					'success'
-				)
+				swal('Success', `Dear ! Your Query is Sent!`, 'success')
 			}
 		},
 	})
